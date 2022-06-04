@@ -9,7 +9,6 @@ public class MyIntegerLinkedList {
 
     private class Node {
         public Integer element;
-
         public Node next;
 
         public Node(int element) {
@@ -31,6 +30,7 @@ public class MyIntegerLinkedList {
             currentNode.next = newNode;
         }
     }
+
 
     public void remove(int element) {
         Node currentNode = head;
