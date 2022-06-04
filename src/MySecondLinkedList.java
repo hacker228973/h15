@@ -96,6 +96,7 @@ public class MySecondLinkedList {
         node(index - 1).next = node(index).next;
         size--;
     }
+
     public void set(int index, int element) {
         if (indexCheck(index)) {
             System.out.println("No No No No No No Listen Listen");
@@ -104,6 +105,7 @@ public class MySecondLinkedList {
 
         node(index).element = element;
     }
+
     public int get(int index) {
         if (size == 0) {
             System.out.println("No No No No No No Listen Listen");
@@ -118,6 +120,7 @@ public class MySecondLinkedList {
         return node(index).element;
 
     }
+
     public void removeByElement(int element) {
         Node currentNode = first;
         Node previousNode = null;
@@ -146,6 +149,7 @@ public class MySecondLinkedList {
             System.out.println(currentNode.element);
         }
     }
+
     @Override
     public String toString() {
         Node currentNode = first;
